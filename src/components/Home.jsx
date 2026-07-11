@@ -1,4 +1,3 @@
-import { toast } from "react-toastify";
 import React, { useEffect, useState } from "react";
 import {
   sortByRatings,
@@ -38,7 +37,7 @@ const Home = () => {
 
   useEffect(() => {
     if (restaurantsError) {
-      return alert.error(restaurantsError);
+      return; // error already shown via <Message> below, no need to refetch in a loop
     }
     dispatch(getRestaurants(keyword));
   }, [dispatch, restaurantsError, keyword]);
