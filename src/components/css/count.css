@@ -1,0 +1,19 @@
+.NumOfRestro {
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: var(--swiggy-text);
+  margin-top: 1.2rem;
+  margin-bottom: 0;
+}
+
+.Restro {
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: var(--swiggy-text);
+}
+
+hr {
+  border: none;
+  border-top: 1px solid var(--swiggy-border);
+  margin: 0.8rem 0 0.5rem;
+}
